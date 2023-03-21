@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row justify-content-center bg-secondary-subtle">
+    <img class="m-4" src="NewOpenLaw.png" style="width: 30%; height: auto;" >
+  </div>
+ 
+  <div class="container-sm">
+    <center>
+      <br>
+      <p class="alert alert-warning">*This GPT model does not give legal advise or guidance and is strictly an information gathering tool</p1>
+      <br>
+    </center>
+  </div>
+
+  <!-- <p>Enter your reading level</p>
+  <input type="range" min="1" max="5" value="3"> -->
+    <!--Create button that sendsUsermessage-->
+  
+  
+  <div class="container-sm p-3">
+    <h4>Input Contract as file or text</h4>
+    <input type="file" class="form-control" id="fileUploader" name="avatar" accept="pdf"> 
+  </div>
+ 
+  <center class="container">
+    <form id="form">
+      <textarea class="form-control" id="input" name="input" rows="8"></textarea>
+      <br>
+      <input for="form" class="btn btn-light" type="submit" value="Submit">
+    </form>
+    <div id="loading-screen" style="display: none;">
+      <div class="spinner"></div>
+      <img src="spinner2.gif" style="width: 15%; height: auto;" >
+    </div>
+    <br></br>
+
+    <!-- GPT output feild  -->
+
+    <!--(old div) <div id="results" class="mx-auto d-flex flex-column justify-content-center"></div> -->
+    <div class="text-white" id="box11">
+      <div class="card-body" id="box1">
+        <div id="results" class="mx-auto d-flex flex-column justify-content-center">
+        </div>
+      </div>
+    </div>
+    
+    <!-- disclaimer box -->
+    <div id="disclaimer" style="display: none;" class="alert alert-warning">
+      <div class="card-body">
+        <div class="mx-auto d-flex flex-column justify-content-center">
+          <p1>* As an AI language model, I don't have authority to enter into, write, or provide legal counsel, but I can provide general information about different types of contracts and help you understand the contracts you are evaluating.</p1>
+          <p1>* Seek counsel or guidance with an attorney who specializes in contract law for specific legal advice and guidance on drafting and negotiating contracts</p1>
+        </div>
+      </div>
+    </div>
+
+    <br></br>
+  </center>
+    <div class="contrainer-fluid bg-secondary-subtle">
+      <form class="p-5" id="form2">
+        
+        <h4>Have any questions?</h4>
+        <br>
+        <textarea class="form-control" id="input2" name="input" rows="2"></textarea>
+        <br>
+        <input class="btn btn-dark" for="form2" type="submit" value="Submit">
+      </form>
+      <br></br>
+      <!-- follow up questions area -->
+      <!-- <div id="questions" class="card purple-box text-white">
+        <div class="card-body">
+          <div id="results" class="mx-auto d-flex flex-column justify-content-center"></div>
+        </div>
+      </div> -->
+      <div id="questions"></div>
+    </div>
+    
+
+    
+</div>
+
+<script src="test.js"></script>
+</body>
+
+</html>
+
+
+  
